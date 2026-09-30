@@ -329,6 +329,14 @@ export default function App() {
     }
     window.addEventListener("scroll", handleScroll, { passive: true })
     handleScroll()
+
+    if (window.location.hash) {
+      setTimeout(() => {
+        const el = document.querySelector(window.location.hash)
+        if (el) el.scrollIntoView({ behavior: "instant" })
+      }, 100)
+    }
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -646,24 +654,31 @@ export default function App() {
       </section>
 
       {/* ============ DIVERSE LEARNING PATHS ============ */}
-      <section className="mx-auto max-w-[1200px] px-6 pb-20 md:pb-28 flex flex-col items-center">
+      <section
+        id="diverse"
+        className="scroll-mt-24 mx-auto max-w-[1248px] w-full px-4 sm:px-6 pb-20 md:pb-28 flex flex-col items-center"
+      >
         <SectionHeading
           center
           title="Explore Diverse Learning Paths at Bytespace"
           sub="At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories."
         />
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 mt-14">
+        <div className="w-full flex flex-nowrap items-center justify-start lg:justify-between gap-4 sm:gap-5 lg:gap-6 xl:gap-[41px] mt-12 md:mt-14 overflow-x-auto no-scrollbar py-4 px-1 snap-x">
           {categoryNames.map((name, i) => (
             <div
               key={name}
               tabIndex={0}
               role="button"
-              className="group border border-gray-200 rounded-[24px] size-[160px] sm:size-[167px] flex flex-col items-center justify-center gap-3 hover:border-blue hover:shadow-xl hover:-translate-y-2 active:scale-95 transition-all duration-300 cursor-pointer focus-visible:ring-2 focus-visible:ring-blue focus-visible:outline-none"
+              className="group shrink-0 border border-gray-200 rounded-[24px] size-[140px] sm:size-[150px] md:size-[156px] lg:size-[166px] flex flex-col items-center justify-center gap-3 hover:border-blue hover:shadow-xl hover:-translate-y-2 active:scale-95 transition-all duration-300 cursor-pointer focus-visible:ring-2 focus-visible:ring-blue focus-visible:outline-none snap-start bg-white"
             >
-              <span className="bg-lime rounded-[40px] p-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-115 group-hover:rotate-6 group-hover:shadow-md">
-                <img src={pathCatIcons[i]} alt="" className="size-9" />
+              <span className="bg-lime rounded-full size-[52px] sm:size-[56px] lg:size-[60px] flex items-center justify-center transition-transform duration-300 group-hover:scale-115 group-hover:rotate-6 group-hover:shadow-md">
+                <img
+                  src={pathCatIcons[i]}
+                  alt=""
+                  className="size-7 sm:size-8 lg:size-9"
+                />
               </span>
-              <p className="font-body font-medium text-[20px] text-ink group-hover:text-blue transition-colors duration-200">
+              <p className="font-body font-medium text-[15px] sm:text-[17px] lg:text-[20px] text-ink group-hover:text-blue transition-colors duration-200 text-center px-2">
                 {name}
               </p>
             </div>
