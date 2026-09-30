@@ -30,7 +30,7 @@ const shapePrismLime = `${assetPathPrefix}/shape_prism_lime.png`
 const thumbAsset = `${assetPathPrefix}/728b0.png`
 const thumbData = `${assetPathPrefix}/59769.png`
 
-function MiniCourseCard({ thumb, title }: { thumb: string; title: string }) {
+function MiniCourseCard({ thumb, title }: { thumb: string title: string }) {
   return (
     <div className="group bg-white border border-gray-200 hover:border-blue/30 rounded-[24px] p-[15px] w-[372px] h-[383px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl cursor-pointer">
       <div className="relative h-[195px] rounded-[12px] overflow-hidden bg-[#443131] shrink-0">
@@ -119,24 +119,24 @@ function MiniCourseCard({ thumb, title }: { thumb: string; title: string }) {
 export default function AuthLeftCluster() {
   return (
     <div className="relative w-[552px] h-[586px] hidden lg:block select-none scale-[0.72] xl:scale-[0.88] 2xl:scale-100 origin-top-left -mb-[160px] xl:-mb-[70px] 2xl:mb-0">
-      {/* 1. Back Course Card (Build Digital Asset) */}
+      {/* Background course preview card */}
       <div className="absolute left-[27px] top-[90px] z-10 drop-shadow-2xl">
         <MiniCourseCard thumb={thumbAsset} title="Build Digital Asset" />
       </div>
 
-      {/* 2. Top-Left 3D Lime Donut (overlaps Card 1 and peeks beside Card 2) */}
+      {/* Floating 3D lime donut */}
       <img
         src={shapeDonutLime}
         alt=""
         className="pointer-events-none absolute left-[54px] top-[15px] w-[147px] h-[147px] z-15 drop-shadow-2xl animate-float-slow transition-transform hover:scale-105"
       />
 
-      {/* 3. Front Course Card (the Power of Big Data) */}
+      {/* Foreground course preview card */}
       <div className="absolute left-[138px] top-[0px] z-20 drop-shadow-2xl">
         <MiniCourseCard thumb={thumbData} title="the Power of Big Data" />
       </div>
 
-      {/* 4. Bottom-Right Happy Students lime card */}
+      {/* Student community card */}
       <div className="absolute left-[253px] top-[435px] z-30 backdrop-blur-[10px] bg-lime rounded-[16px] p-4 w-[258px] h-[123px] flex flex-col justify-between shadow-2xl transition-all duration-300 hover:scale-105 cursor-default border border-black/5">
         <div>
           <p className="font-body font-medium text-[16px] text-ink">
@@ -173,14 +173,14 @@ export default function AuthLeftCluster() {
         </div>
       </div>
 
-      {/* 5. Right 3D White Squiggle */}
+      {/* Floating 3D white squiggle */}
       <img
         src={shapeSquiggleWhite}
         alt=""
         className="pointer-events-none absolute left-[376px] top-[321px] w-[176px] h-[176px] z-35 drop-shadow-2xl animate-float-reverse transition-transform hover:scale-105"
       />
 
-      {/* 6. Bottom-Left 3D Lime Prism */}
+      {/* Floating 3D lime prism */}
       <img
         src={shapePrismLime}
         alt=""

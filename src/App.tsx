@@ -368,7 +368,7 @@ export default function App() {
 
   return (
     <div className="w-full min-h-dvh bg-white overflow-x-hidden">
-      {/* ============ FIXED STICKY NAVBAR ============ */}
+      {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
@@ -433,7 +433,7 @@ export default function App() {
         </div>
       </nav>
 
-      {/* ============ HERO SECTION (WITH 3D SHAPES & LIME DOME) ============ */}
+      {/* Hero Section */}
       <header className="relative bg-blue text-white overflow-hidden min-h-screen lg:h-screen lg:max-h-screen flex flex-col justify-between pt-[80px] md:pt-[90px]">
         {/* Background grid */}
         <img
@@ -442,38 +442,32 @@ export default function App() {
           className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-90"
         />
 
-        {/* 3D Floating Decorative Brand Shapes (Framing Hero) */}
-        {/* Left top squiggle */}
+        {/* Floating 3D decorative shapes */}
         <img
           src={imgSquiggleLime}
           alt=""
           className="pointer-events-none select-none absolute -left-12 sm:-left-4 lg:left-[-40px] top-[180px] sm:top-[200px] w-[180px] sm:w-[220px] lg:w-[280px] xl:w-[320px] z-10 drop-shadow-xl hidden sm:block"
         />
-        {/* Left mid white squiggle */}
         <img
           src={imgSquiggleWhite}
           alt=""
           className="pointer-events-none select-none absolute left-[3%] sm:left-[6%] lg:left-[10%] top-[420px] sm:top-[450px] w-[90px] sm:w-[120px] lg:w-[150px] z-10 drop-shadow-lg hidden md:block"
         />
-        {/* Left bottom white 3D donut */}
         <img
           src={imgDonutWhite}
           alt=""
           className="pointer-events-none select-none absolute -left-10 sm:-left-6 lg:left-[10px] bottom-[-20px] sm:bottom-[-10px] lg:bottom-0 w-[160px] sm:w-[200px] lg:w-[260px] xl:w-[300px] z-10 drop-shadow-2xl hidden sm:block"
         />
-        {/* Right top lime cylinder */}
         <img
           src={imgCylinderLime}
           alt=""
           className="pointer-events-none select-none absolute -right-12 sm:-right-4 lg:right-[-40px] top-[180px] sm:top-[200px] w-[180px] sm:w-[220px] lg:w-[280px] xl:w-[320px] z-10 drop-shadow-xl hidden sm:block"
         />
-        {/* Right mid white prism */}
         <img
           src={imgPrismWhite}
           alt=""
           className="pointer-events-none select-none absolute right-[4%] sm:right-[7%] lg:right-[11%] top-[420px] sm:top-[440px] w-[90px] sm:w-[120px] lg:w-[160px] z-10 drop-shadow-lg hidden md:block"
         />
-        {/* Right bottom white 3D spring */}
         <img
           src={imgSpringWhite}
           alt=""
@@ -517,10 +511,10 @@ export default function App() {
           </form>
         </div>
 
-        {/* Hero student cutout + lime dome + floating cards */}
+        {/* Hero visual composition */}
         <div className="relative z-10 mx-auto w-full px-4 flex-1 min-h-0 flex items-end justify-center overflow-visible">
           <div className="relative flex justify-center w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[578px]">
-            {/* Giant Lime Circular Dome behind student (exact Figma specs: cx=574.5, cy=574.5, r=414.5, strokeWidth=320, #CBFC01) */}
+            {/* Decorative dome background */}
             <svg
               className="pointer-events-none select-none absolute left-1/2 -translate-x-1/2 top-[13%] w-[199%] aspect-square max-w-none z-0"
               viewBox="0 0 1149 1149"
@@ -536,14 +530,14 @@ export default function App() {
               />
             </svg>
 
-            {/* Transparent Student Cutout */}
+            {/* Student imagery */}
             <img
               src={imgHeroPerson}
               alt="Student learning"
               className="relative z-10 w-full h-auto object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)] select-none pointer-events-none"
             />
 
-            {/* UI/UX design floating card */}
+            {/* UI/UX design metric card */}
             <div className="absolute -left-2 sm:left-[-15px] lg:left-[-27px] top-[24%] z-20 backdrop-blur-[10px] bg-white/95 rounded-[16px] px-3.5 py-2.5 sm:px-4 sm:py-3 lg:px-5 lg:py-3.5 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
               <p className="font-body font-medium text-[14px] sm:text-[15px] lg:text-[16px] text-ink">
                 UI/UX Design
@@ -568,7 +562,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Happy students card */}
+            {/* Student community rating card */}
             <div className="absolute -left-4 sm:left-[-40px] md:left-[-60px] lg:left-[-103px] top-[58%] z-20 backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3 sm:p-3.5 lg:p-4 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
               <p className="font-body font-medium text-[13px] sm:text-[14px] lg:text-[16px] text-ink">
                 Happy Students
@@ -594,7 +588,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* ============ PARTNER LOGOS ============ */}
+      {/* Partner Logos */}
       <section className="bg-gray-50 border-y border-gray-100">
         <div className="mx-auto max-w-[1200px] px-6 py-10 md:py-12 flex flex-wrap items-center justify-center gap-x-16 gap-y-8">
           {partnerLogos.map((logo, i) => (
@@ -608,7 +602,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ DISCOVER + COURSES ============ */}
+      {/* Courses Section */}
       <section
         id="courses"
         className="scroll-mt-24 mx-auto max-w-[1200px] px-6 py-20 md:py-28 flex flex-col items-center"
@@ -619,7 +613,7 @@ export default function App() {
           sub="At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life."
         />
 
-        {/* Category tabs */}
+        {/* Category filters */}
         <div className="flex flex-wrap justify-center gap-3 max-w-[980px] mt-12">
           {visibleTabs.map((t) => {
             const isSelected = activeTab === t
@@ -645,7 +639,7 @@ export default function App() {
           </button>
         </div>
 
-        {/* Course grid with smooth transition */}
+        {/* Course grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 mt-14 w-full">
           {(filteredCourses.length > 0 ? filteredCourses : courses).map((c) => (
             <CourseCard key={c.title} title={c.title} />
@@ -653,7 +647,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ DIVERSE LEARNING PATHS ============ */}
+      {/* Learning Paths Section */}
       <section
         id="diverse"
         className="scroll-mt-24 mx-auto max-w-[1248px] w-full px-4 sm:px-6 pb-20 md:pb-28 flex flex-col items-center"
@@ -686,19 +680,19 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ GROWTH + CREATE/MANAGE (WITH MULTI-LAYER COLLAGE & YEAR-TO-DATE CARD) ============ */}
+      {/* Creator & Growth Section */}
       <section
         id="creators"
         className="scroll-mt-24 bg-[#fafafa] relative overflow-hidden"
       >
-        {/* Soft Ambient Mesh Glows (from Figma) */}
+        {/* Ambient background accents */}
         <div className="pointer-events-none absolute -left-40 top-20 size-[600px] rounded-full bg-lime/25 blur-[120px]" />
         <div className="pointer-events-none absolute -left-20 bottom-40 size-[500px] rounded-full bg-blue/15 blur-[100px]" />
         <div className="pointer-events-none absolute -right-40 top-40 size-[600px] rounded-full bg-blue/10 blur-[120px]" />
         <div className="pointer-events-none absolute right-10 bottom-20 size-[500px] rounded-full bg-lime/20 blur-[110px]" />
 
         <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-20 md:py-28 flex flex-col gap-28">
-          {/* Growth — Multi-layer Composition with overlapping Student & Squiggle */}
+          {/* Growth feature */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex flex-col gap-10">
               <SectionHeading title="Your Path to Professional Growth Starts Here!" />
@@ -725,28 +719,25 @@ export default function App() {
               </div>
             </div>
 
-            {/* Collage on Right: CourseCard + Overlapping Student Cutout + Squiggle + Progress Card */}
+            {/* Visual composition: course preview and student card */}
             <div className="relative flex justify-center items-center min-h-[460px]">
-              {/* Back: CourseCard */}
               <div className="w-full max-w-[370px] relative z-0">
                 <CourseCard title="Learn Figma from Basic" />
               </div>
 
-              {/* Decorative Lime Squiggle behind student */}
               <img
                 src={imgSquiggleLime}
                 alt=""
                 className="pointer-events-none select-none absolute right-[-10px] top-[40px] w-[150px] z-10 drop-shadow-md"
               />
 
-              {/* Front: Overlapping Student Cutout */}
               <img
                 src={imgHeroPerson}
                 alt=""
                 className="pointer-events-none select-none absolute right-[-20px] sm:right-[10px] bottom-0 h-[360px] sm:h-[400px] object-contain z-20 drop-shadow-2xl"
               />
 
-              {/* Floating Learning Progress Card */}
+              {/* Learning progress overlay card */}
               <div className="absolute right-[-10px] sm:right-[-20px] top-[140px] backdrop-blur-[10px] bg-white/95 rounded-[16px] p-4 shadow-xl z-30 transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
                 <p className="font-body font-medium text-[13px] text-ink">
                   Learning Progress
@@ -761,25 +752,23 @@ export default function App() {
             </div>
           </div>
 
-          {/* Create & Manage — With Creator Cutout, Dual Revenue Cards, and Squiggle */}
+          {/* Course creator management section */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Collage on Left */}
+            {/* Visual composition: creator imagery and metric badges */}
             <div className="relative order-2 lg:order-1 flex justify-center items-center min-h-[500px]">
-              {/* Lime Squiggle behind creator */}
               <img
                 src={imgSquiggleLime}
                 alt=""
                 className="pointer-events-none select-none absolute right-[10%] sm:right-[18%] top-[80px] w-[160px] z-0 drop-shadow-md"
               />
 
-              {/* Creator Woman Cutout */}
               <img
                 src={imgCreatorPerson}
                 alt="Creator"
                 className="relative z-10 w-full max-w-[360px] sm:max-w-[420px] h-[480px] sm:h-[540px] object-contain drop-shadow-2xl"
               />
 
-              {/* Card 1: Total Revenue (Top Left) */}
+              {/* Total Revenue metric card */}
               <div className="absolute left-[-15px] sm:left-[-10px] top-6 backdrop-blur-[10px] bg-blue text-gray-50 rounded-[16px] p-4 shadow-2xl w-[210px] sm:w-[220px] z-20 border border-white/20 transition-all duration-300 hover:scale-105 select-none">
                 <p className="font-body font-medium text-[15px]">
                   Total Revenue
@@ -798,7 +787,7 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Card 2: Year to Date (Middle Left - PREVIOUSLY LEFT OUT!) */}
+              {/* Year to Date metric card */}
               <div className="absolute left-[-20px] sm:left-[-15px] top-[140px] sm:top-[150px] backdrop-blur-[10px] bg-blue text-gray-50 rounded-[16px] p-4 shadow-2xl w-[190px] sm:w-[200px] z-20 border border-white/20 transition-all duration-300 hover:scale-105 select-none">
                 <p className="font-body font-medium text-[14px]">
                   Year to Date
@@ -814,7 +803,7 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Card 3: Happy Students (Bottom Right) */}
+              {/* Student community card */}
               <div className="absolute right-[-15px] sm:right-[0px] bottom-4 backdrop-blur-[10px] bg-white/95 rounded-[16px] p-4 shadow-2xl z-20 transition-all duration-300 hover:scale-105 cursor-default select-none border border-white/60">
                 <p className="font-body font-medium text-[15px] text-ink">
                   Happy Students
@@ -838,7 +827,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Right: Text and Checklist */}
+            {/* Features checklist */}
             <div className="order-1 lg:order-2 flex flex-col gap-10">
               <h2 className="font-display font-semibold text-[clamp(30px,4vw,44px)] leading-[1.2] tracking-[-0.44px] text-ink max-w-[391px]">
                 Create &amp; Manage Courses Easily.
@@ -875,7 +864,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ CTA (WITH FULL 3D BRAND SHAPES) ============ */}
+      {/* Call to Action */}
       <section className="relative bg-blue text-gray-50 overflow-hidden">
         <img
           src={imgCtaBg}
@@ -883,7 +872,7 @@ export default function App() {
           className="pointer-events-none absolute inset-0 w-full h-full object-cover opacity-90"
         />
 
-        {/* Floating 3D brand assets around CTA */}
+        {/* Floating 3D brand accents */}
         <img
           src={imgSquiggleLime}
           alt=""
@@ -940,9 +929,9 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ TESTIMONIALS (WITH AMBIENT MESH GRADIENTS) ============ */}
+      {/* Testimonials */}
       <section className="bg-[#fafafa] relative overflow-hidden">
-        {/* Soft Ambient Mesh Glows */}
+        {/* Ambient background accents */}
         <div className="pointer-events-none absolute -left-40 bottom-10 size-[500px] rounded-full bg-blue/15 blur-[120px]" />
         <div className="pointer-events-none absolute -right-30 top-10 size-[500px] rounded-full bg-lime/20 blur-[120px]" />
 
@@ -985,14 +974,13 @@ export default function App() {
         </div>
       </section>
 
-      {/* ============ FOOTER (WITH BRAND-ACCURATE LIME "b" LOGO) ============ */}
+      {/* Footer */}
       <footer className="bg-white border-t border-gray-200">
         <div className="mx-auto max-w-[1200px] px-6 py-16 flex flex-col gap-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <a href="#" className="flex items-center gap-2 group w-fit">
-                  {/* Preserves vibrant lime brand mark while text is dark ink */}
                   <img
                     src={imgLogo}
                     alt=""
@@ -1092,7 +1080,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Floating Back to Top Button */}
+      {/* Back to top button */}
       {showBackToTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

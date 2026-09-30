@@ -26,7 +26,7 @@ export default function SignIn() {
         className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-90"
       />
 
-      {/* Header logo */}
+      {/* Header */}
       <header className="relative z-10 px-6 md:px-12 lg:px-20 h-[70px] lg:h-[80px] flex items-center shrink-0">
         <Link
           to="/"
@@ -40,10 +40,10 @@ export default function SignIn() {
         </Link>
       </header>
 
-      {/* Main Viewport Centered */}
+      {/* Main content */}
       <main className="relative z-10 mx-auto max-w-[1300px] w-full px-6 py-4 lg:py-0 flex-1 flex items-center">
         <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* LEFT — copy + decorative cluster */}
+          {/* Left column: introduction and visual cluster */}
           <div className="flex flex-col gap-6 lg:gap-8">
             <div className="flex flex-col gap-3 text-gray-50 max-w-[475px]">
               <h1 className="font-display font-semibold text-[22px] sm:text-[24px] leading-[1.2] tracking-[-0.2px]">
@@ -55,11 +55,10 @@ export default function SignIn() {
               </p>
             </div>
 
-            {/* Decorative overlapping cards + 3D objects */}
             <AuthLeftCluster />
           </div>
 
-          {/* RIGHT — form card */}
+          {/* Right column: sign-in form */}
           <div className="w-full max-w-[540px] justify-self-center lg:justify-self-end bg-white rounded-[24px] px-6 sm:px-12 py-8 sm:py-10 shadow-2xl">
             <form
               className="flex flex-col gap-6 sm:gap-7"
@@ -173,14 +172,14 @@ export default function SignIn() {
                 </button>
               </div>
 
-              {/* or divider */}
+              {/* Divider */}
               <div className="flex items-center gap-[11px]">
                 <span className="h-px flex-1 bg-gray-200" />
                 <span className="font-body text-[16px] text-gray-400">or</span>
                 <span className="h-px flex-1 bg-gray-200" />
               </div>
 
-              {/* social login */}
+              {/* Social login */}
               <div className="flex justify-center gap-4">
                 <button
                   type="button"
@@ -212,7 +211,6 @@ export default function SignIn() {
         </div>
       </main>
 
-      {/* Sub-footer margin */}
       <div className="h-6 shrink-0" />
     </div>
   )
