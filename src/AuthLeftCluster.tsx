@@ -30,7 +30,7 @@ const shapePrismLime = `${assetPathPrefix}/shape_prism_lime.png`
 const thumbAsset = `${assetPathPrefix}/728b0.png`
 const thumbData = `${assetPathPrefix}/59769.png`
 
-function MiniCourseCard({ thumb, title }: { thumb: string title: string }) {
+function MiniCourseCard({ thumb, title }: { thumb: string; title: string }) {
   return (
     <div className="group bg-white border border-gray-200 hover:border-blue/30 rounded-[24px] p-[15px] w-[372px] h-[383px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl cursor-pointer">
       <div className="relative h-[195px] rounded-[12px] overflow-hidden bg-[#443131] shrink-0">
