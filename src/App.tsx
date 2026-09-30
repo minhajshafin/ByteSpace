@@ -434,69 +434,62 @@ export default function App() {
           className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-90"
         />
 
-        {/* Giant Lime Circular Dome behind student */}
-        <img
-          src={imgHeroEllipse}
-          alt=""
-          className="pointer-events-none select-none absolute left-1/2 -translate-x-1/2 bottom-[-400px] sm:bottom-[-460px] md:bottom-[-480px] lg:bottom-[-520px] w-[950px] sm:w-[1100px] lg:w-[1250px] max-w-none z-0"
-        />
-
         {/* 3D Floating Decorative Brand Shapes (Framing Hero) */}
         {/* Left top squiggle */}
         <img
           src={imgSquiggleLime}
           alt=""
-          className="pointer-events-none select-none absolute -left-10 sm:left-2 md:left-6 top-[180px] sm:top-[210px] w-[140px] sm:w-[190px] lg:w-[220px] z-10 drop-shadow-xl animate-pulse [animation-duration:6s]"
+          className="pointer-events-none select-none absolute -left-12 sm:-left-4 lg:left-[-40px] top-[180px] sm:top-[200px] w-[180px] sm:w-[220px] lg:w-[280px] xl:w-[320px] z-10 drop-shadow-xl hidden sm:block"
         />
         {/* Left mid white squiggle */}
         <img
           src={imgSquiggleWhite}
           alt=""
-          className="pointer-events-none select-none absolute left-[8%] sm:left-[12%] lg:left-[15%] top-[420px] sm:top-[460px] w-[80px] sm:w-[110px] lg:w-[130px] z-10 drop-shadow-lg"
+          className="pointer-events-none select-none absolute left-[3%] sm:left-[6%] lg:left-[10%] top-[420px] sm:top-[450px] w-[90px] sm:w-[120px] lg:w-[150px] z-10 drop-shadow-lg hidden md:block"
         />
         {/* Left bottom white 3D donut */}
         <img
           src={imgDonutWhite}
           alt=""
-          className="pointer-events-none select-none absolute -left-12 sm:-left-6 lg:left-4 bottom-[-10px] sm:bottom-2 w-[180px] sm:w-[240px] lg:w-[280px] z-20 drop-shadow-2xl"
+          className="pointer-events-none select-none absolute -left-10 sm:-left-6 lg:left-[10px] bottom-[-20px] sm:bottom-[-10px] lg:bottom-0 w-[160px] sm:w-[200px] lg:w-[260px] xl:w-[300px] z-10 drop-shadow-2xl hidden sm:block"
         />
         {/* Right top lime cylinder */}
         <img
           src={imgCylinderLime}
           alt=""
-          className="pointer-events-none select-none absolute -right-12 sm:right-2 md:right-8 top-[190px] sm:top-[220px] w-[150px] sm:w-[200px] lg:w-[240px] z-10 drop-shadow-xl"
+          className="pointer-events-none select-none absolute -right-12 sm:-right-4 lg:right-[-40px] top-[180px] sm:top-[200px] w-[180px] sm:w-[220px] lg:w-[280px] xl:w-[320px] z-10 drop-shadow-xl hidden sm:block"
         />
         {/* Right mid white prism */}
         <img
           src={imgPrismWhite}
           alt=""
-          className="pointer-events-none select-none absolute right-[8%] sm:right-[12%] lg:right-[15%] top-[430px] sm:top-[460px] w-[80px] sm:w-[110px] lg:w-[130px] z-10 drop-shadow-lg"
+          className="pointer-events-none select-none absolute right-[4%] sm:right-[7%] lg:right-[11%] top-[420px] sm:top-[440px] w-[90px] sm:w-[120px] lg:w-[160px] z-10 drop-shadow-lg hidden md:block"
         />
         {/* Right bottom white 3D spring */}
         <img
           src={imgSpringWhite}
           alt=""
-          className="pointer-events-none select-none absolute -right-10 sm:right-0 lg:right-6 bottom-[-10px] sm:bottom-4 w-[160px] sm:w-[220px] lg:w-[260px] z-20 drop-shadow-2xl"
+          className="pointer-events-none select-none absolute -right-10 sm:-right-6 lg:right-[10px] bottom-[-20px] sm:bottom-[-10px] lg:bottom-0 w-[160px] sm:w-[200px] lg:w-[250px] xl:w-[290px] z-10 drop-shadow-2xl hidden sm:block"
         />
 
         {/* Hero content */}
-        <div className="relative z-10 mx-auto max-w-[1200px] px-6 pt-4 md:pt-6 lg:pt-8 flex flex-col items-center text-center gap-4 sm:gap-5 shrink-0">
-          <h1 className="font-display font-semibold text-[clamp(30px,4.5vw,60px)] leading-[1.12] tracking-[-0.72px] max-w-[900px]">
+        <div className="relative z-20 mx-auto max-w-[1200px] px-6 pt-2 md:pt-4 flex flex-col items-center text-center gap-3 sm:gap-4 shrink-0">
+          <h1 className="font-display font-semibold text-[clamp(32px,4.5vw,56px)] leading-[1.12] tracking-[-0.72px] max-w-[850px]">
             Get Access to Hundreds Courses Available
           </h1>
-          <p className="font-body text-[15px] sm:text-[17px] leading-[1.5] text-[#e5e6e8] max-w-[620px]">
+          <p className="font-body text-[15px] sm:text-[16px] leading-[1.5] text-[#e5e6e8] max-w-[620px]">
             Unlock your creativity, gain valuable knowledge, and grow your
             business with our wide range of courses.
           </p>
           <form
             onSubmit={handleSearch}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-[640px] justify-center mt-1"
+            className="flex items-center gap-3 sm:gap-4 w-full max-w-[580px] justify-center mt-1"
           >
-            <div className="flex-1 bg-white rounded-[24px] h-[50px] flex items-center gap-3 px-6 shadow-md transition-all duration-300 focus-within:ring-4 focus-within:ring-lime/40 focus-within:shadow-xl">
+            <div className="flex-1 bg-white rounded-[24px] h-[52px] flex items-center gap-3 px-5 sm:px-6 shadow-md transition-all duration-300 focus-within:ring-4 focus-within:ring-lime/40 focus-within:shadow-xl">
               <img
                 src={imgSearchIcon}
                 alt=""
-                className="size-5 shrink-0 opacity-70"
+                className="size-5 shrink-0 opacity-60"
               />
               <input
                 type="search"
@@ -504,34 +497,50 @@ export default function App() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Course, topic, creator"
-                className="w-full bg-transparent outline-none font-body text-[16px] text-ink placeholder:text-gray-400"
+                className="w-full bg-transparent outline-none font-body text-[15px] sm:text-[16px] text-ink placeholder:text-[#9e9e9e]"
               />
             </div>
             <button
               type="submit"
-              className="bg-lime rounded-[24px] px-8 h-[50px] font-body font-medium text-[17px] text-ink hover:brightness-95 hover:scale-[1.02] hover:shadow-lg active:scale-95 focus-visible:ring-2 focus-visible:ring-lime focus-visible:outline-none transition-all duration-200 cursor-pointer shadow-sm"
+              className="bg-lime hover:brightness-95 rounded-[23px] px-7 h-[46px] font-body font-medium text-[16px] text-ink hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer shadow-sm shrink-0"
             >
               Search
             </button>
           </form>
         </div>
 
-        {/* Hero student cutout + floating cards (Directly bursting over dome) */}
-        <div className="relative z-10 mx-auto max-w-[1200px] w-full px-6 flex-1 min-h-0 flex items-end justify-center pt-2">
-          <div className="relative flex justify-center w-full max-w-[560px]">
+        {/* Hero student cutout + lime dome + floating cards */}
+        <div className="relative z-10 mx-auto w-full px-4 flex-1 min-h-0 flex items-end justify-center overflow-visible">
+          <div className="relative flex justify-center w-full max-w-[420px] sm:max-w-[480px] md:max-w-[520px] lg:max-w-[578px]">
+            {/* Giant Lime Circular Dome behind student (exact Figma specs: cx=574.5, cy=574.5, r=414.5, strokeWidth=320, #CBFC01) */}
+            <svg
+              className="pointer-events-none select-none absolute left-1/2 -translate-x-1/2 top-[13%] w-[199%] aspect-square max-w-none z-0"
+              viewBox="0 0 1149 1149"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="574.5"
+                cy="574.5"
+                r="414.5"
+                stroke="#CBFC01"
+                strokeWidth="320"
+              />
+            </svg>
+
             {/* Transparent Student Cutout */}
             <img
               src={imgHeroPerson}
               alt="Student learning"
-              className="w-auto h-[320px] sm:h-[380px] md:h-[430px] lg:h-[46vh] max-h-[500px] object-contain object-bottom drop-shadow-2xl transition-transform duration-700 hover:scale-[1.02]"
+              className="relative z-10 w-full h-auto object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.35)] select-none pointer-events-none"
             />
 
             {/* UI/UX design floating card */}
-            <div className="absolute -left-6 sm:left-0 md:-left-10 lg:left-[-12%] top-[45%] backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3.5 sm:p-4 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
-              <p className="font-body font-medium text-[15px] sm:text-[16px] text-ink">
+            <div className="absolute -left-2 sm:left-[-15px] lg:left-[-27px] top-[24%] z-20 backdrop-blur-[10px] bg-white/95 rounded-[16px] px-3.5 py-2.5 sm:px-4 sm:py-3 lg:px-5 lg:py-3.5 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
+              <p className="font-body font-medium text-[14px] sm:text-[15px] lg:text-[16px] text-ink">
                 UI/UX Design
               </p>
-              <div className="flex gap-2 font-body text-[12px] text-gray-400 mt-0.5">
+              <div className="flex gap-2 font-body text-[11px] sm:text-[12px] text-gray-400 mt-0.5">
                 <span>200 Courses</span>
                 <span>•</span>
                 <span>1000+ Students</span>
@@ -539,35 +548,35 @@ export default function App() {
             </div>
 
             {/* Learning progress card */}
-            <div className="absolute -right-6 sm:right-0 md:-right-10 lg:right-[-12%] top-[24%] backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3.5 sm:p-4 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
-              <p className="font-body font-medium text-[13px] sm:text-[14px] text-ink">
+            <div className="absolute -right-2 sm:right-[-25px] lg:right-[-65px] top-[25%] z-20 backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3.5 sm:p-4 lg:p-5 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60 min-w-[190px] sm:min-w-[210px] lg:min-w-[232px]">
+              <p className="font-body font-medium text-[12px] sm:text-[13px] lg:text-[14px] text-ink">
                 Learning Progress
               </p>
-              <p className="font-display font-semibold text-[32px] sm:text-[38px] leading-[1.2] tracking-[-0.48px] text-ink">
+              <p className="font-display font-semibold text-[28px] sm:text-[34px] lg:text-[38px] leading-[1.1] tracking-[-0.48px] text-ink mt-0.5">
                 55%
               </p>
-              <div className="relative h-2 w-[160px] sm:w-[180px] rounded-[24px] bg-[#f6f6f6] mt-1 overflow-hidden">
-                <div className="absolute inset-y-0 left-0 w-[56%] rounded-[24px] bg-lime transition-all duration-1000" />
+              <div className="relative h-2 w-[140px] sm:w-[170px] lg:w-[192px] rounded-full bg-[#f6f6f6] mt-2 overflow-hidden">
+                <div className="absolute inset-y-0 left-0 w-[56%] rounded-full bg-lime transition-all duration-1000" />
               </div>
             </div>
 
             {/* Happy students card */}
-            <div className="absolute -left-4 sm:left-2 md:left-[-8%] bottom-3 sm:bottom-4 backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3.5 sm:p-4 shadow-xl hidden lg:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
-              <p className="font-body font-medium text-[15px] sm:text-[16px] text-ink">
+            <div className="absolute -left-4 sm:left-[-40px] md:left-[-60px] lg:left-[-103px] top-[58%] z-20 backdrop-blur-[10px] bg-white/95 rounded-[16px] p-3 sm:p-3.5 lg:p-4 shadow-xl hidden sm:block transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-default select-none border border-white/60">
+              <p className="font-body font-medium text-[13px] sm:text-[14px] lg:text-[16px] text-ink">
                 Happy Students
               </p>
-              <div className="flex items-center gap-1 mb-2">
-                <span className="font-body text-[12px] text-ink font-bold">
+              <div className="flex items-center gap-1.5 mb-1.5 sm:mb-2 mt-0.5">
+                <span className="font-body text-[11px] sm:text-[12px] text-ink font-bold">
                   4.5
                 </span>
-                <span className="font-body text-[12px] text-gray-400">
+                <span className="font-body text-[11px] sm:text-[12px] text-gray-400">
                   (240)
                 </span>
-                <img src={imgStar} alt="" className="size-4" />
+                <img src={imgStar} alt="" className="size-3 sm:size-3.5" />
               </div>
               <AvatarStack
                 avatars={heroAvatars}
-                size={40}
+                size={34}
                 badge={imgAvatarBadge}
                 label="2K+"
                 ring={true}
