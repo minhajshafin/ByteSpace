@@ -89,7 +89,7 @@ export default function SignIn() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="designer@example.com"
-                    className="h-[50px] w-full border border-[#e5e6e8] rounded-[12px] px-5 font-body text-[16px] text-ink placeholder:text-gray-400 outline-none hover:border-gray-400 focus:border-blue focus:ring-4 focus:ring-blue/15 transition-all duration-200"
+                    className="h-[50px] w-full border border-[#e5e6e8] rounded-[12px] px-5 font-body text-[16px] text-ink placeholder:text-gray-400 outline-none hover:border-gray-400 focus:border-blue transition-colors duration-200"
                   />
                 </label>
 
@@ -116,7 +116,7 @@ export default function SignIn() {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="••••••••"
-                      className="h-[50px] w-full border border-[#e5e6e8] rounded-[12px] pl-5 pr-12 font-body text-[16px] text-ink placeholder:text-gray-400 outline-none hover:border-gray-400 focus:border-blue focus:ring-4 focus:ring-blue/15 transition-all duration-200"
+                      className="h-[50px] w-full border border-[#e5e6e8] rounded-[12px] pl-5 pr-12 font-body text-[16px] text-ink placeholder:text-gray-400 outline-none hover:border-gray-400 focus:border-blue transition-colors duration-200"
                     />
                     <button
                       type="button"
@@ -167,7 +167,7 @@ export default function SignIn() {
 
                 <button
                   type="submit"
-                  className="self-end mt-2 bg-lime rounded-[24px] px-8 py-3 font-body font-medium text-[17px] text-ink hover:brightness-95 hover:shadow-md active:scale-95 transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-lime"
+                  className="self-end mt-2 bg-lime hover:bg-blue hover:text-white rounded-[24px] px-8 py-3 font-body font-medium text-[17px] text-ink active:scale-95 transition-all duration-200 cursor-pointer focus-visible:outline-none"
                 >
                   Sign In
                 </button>
@@ -185,14 +185,14 @@ export default function SignIn() {
                 <button
                   type="button"
                   aria-label="Sign in with Facebook"
-                  className="size-[60px] sm:size-[68px] border border-[#d1d1d1] rounded-[20px] sm:rounded-[24px] flex items-center justify-center hover:border-blue hover:bg-blue/5 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-xs"
+                  className="size-[60px] sm:size-[68px] border border-[#d1d1d1] rounded-[20px] sm:rounded-[24px] flex items-center justify-center hover:border-blue hover:bg-blue/5 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
                 >
                   <img src={imgFacebook} alt="" className="size-8 sm:size-9" />
                 </button>
                 <button
                   type="button"
                   aria-label="Sign in with Google"
-                  className="size-[60px] sm:size-[68px] border border-[#d1d1d1] rounded-[20px] sm:rounded-[24px] flex items-center justify-center hover:border-blue hover:bg-blue/5 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-xs"
+                  className="size-[60px] sm:size-[68px] border border-[#d1d1d1] rounded-[20px] sm:rounded-[24px] flex items-center justify-center hover:border-blue hover:bg-blue/5 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
                 >
                   <img src={imgGoogle} alt="" className="size-8 sm:size-9" />
                 </button>

@@ -419,7 +419,7 @@ export default function App() {
             </Link>
             <Link
               to="/register"
-              className="hidden sm:inline bg-white/10 hover:bg-white/20 hover:text-lime active:scale-95 rounded-full px-4 py-1.5 transition-all duration-200"
+              className="hidden sm:inline bg-white/10 hover:bg-lime hover:text-ink text-gray-50 active:scale-95 rounded-full px-4 py-1.5 transition-all duration-200"
             >
               Join Us
             </Link>
@@ -493,7 +493,7 @@ export default function App() {
             onSubmit={handleSearch}
             className="flex items-center gap-3 sm:gap-4 w-full max-w-[580px] justify-center mt-1"
           >
-            <div className="flex-1 bg-white rounded-[24px] h-[52px] flex items-center gap-3 px-5 sm:px-6 shadow-md transition-all duration-300 focus-within:ring-4 focus-within:ring-lime/40 focus-within:shadow-xl">
+            <div className="flex-1 bg-white rounded-[24px] h-[52px] flex items-center gap-3 px-5 sm:px-6 transition-colors duration-200">
               <img
                 src={imgSearchIcon}
                 alt=""
@@ -510,7 +510,7 @@ export default function App() {
             </div>
             <button
               type="submit"
-              className="bg-lime hover:brightness-95 rounded-[23px] px-7 h-[46px] font-body font-medium text-[16px] text-ink hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer shadow-sm shrink-0"
+              className="bg-lime hover:bg-white hover:text-blue rounded-[23px] px-7 h-[46px] font-body font-medium text-[16px] text-ink hover:scale-[1.02] active:scale-95 transition-all duration-200 cursor-pointer shrink-0"
             >
               Search
             </button>
@@ -629,8 +629,8 @@ export default function App() {
                 onClick={() => setActiveTab(t)}
                 className={`rounded-[24px] px-4 py-3 font-body font-medium text-[16px] transition-all duration-200 cursor-pointer active:scale-95 ${
                   isSelected
-                    ? "bg-lime text-ink shadow-sm ring-1 ring-black/5"
-                    : "bg-gray-50 text-ink-700 hover:bg-gray-200/80 hover:text-ink hover:scale-105"
+                    ? "bg-lime text-ink hover:bg-blue hover:text-white"
+                    : "bg-gray-100 text-ink-700 hover:bg-lime hover:text-ink hover:scale-105"
                 }`}
               >
                 {t}
@@ -933,7 +933,7 @@ export default function App() {
           </p>
           <Link
             to="/register"
-            className="inline-block bg-lime rounded-[24px] px-8 py-3.5 font-body font-medium text-[18px] text-ink hover:brightness-95 hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer focus-visible:ring-2 focus-visible:ring-lime"
+            className="inline-block bg-lime hover:bg-white hover:text-blue rounded-[24px] px-8 py-3.5 font-body font-medium text-[18px] text-ink hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer focus-visible:outline-none"
           >
             Join as Creator
           </Link>
@@ -1012,7 +1012,7 @@ export default function App() {
                   onSubmit={handleSubscribe}
                   className="flex flex-col sm:flex-row gap-4"
                 >
-                  <div className="border border-gray-200 rounded-[100px] h-[52px] flex items-center px-6 w-full sm:w-[376px] focus-within:border-blue focus-within:ring-2 focus-within:ring-blue/20 transition-all duration-200">
+                  <div className="border border-gray-300 rounded-[100px] h-[52px] flex items-center px-6 w-full sm:w-[376px] focus-within:border-blue transition-colors duration-200">
                     <input
                       type="email"
                       required
@@ -1026,8 +1026,8 @@ export default function App() {
                     type="submit"
                     className={`rounded-[24px] px-8 py-3 font-body font-medium text-[18px] transition-all duration-200 active:scale-95 cursor-pointer ${
                       subscribed
-                        ? "bg-blue text-white shadow-sm"
-                        : "bg-lime text-ink hover:brightness-95 hover:shadow-md hover:scale-105"
+                        ? "bg-blue hover:bg-lime hover:text-ink text-white"
+                        : "bg-lime hover:bg-blue hover:text-white text-ink hover:scale-105"
                     }`}
                   >
                     {subscribed ? "Subscribed! ✓" : "Search"}
@@ -1097,7 +1097,7 @@ export default function App() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed right-6 bottom-6 z-40 bg-white hover:bg-white text-ink hover:text-blue border border-gray-200 shadow-2xl rounded-full p-3.5 transition-all duration-300 hover:scale-110 active:scale-90 cursor-pointer focus-visible:ring-2 focus-visible:ring-blue"
+          className="fixed right-6 bottom-6 z-40 bg-white hover:bg-blue text-ink hover:text-white border border-gray-300 hover:border-blue shadow-sm rounded-full p-3.5 transition-all duration-200 hover:scale-110 active:scale-90 cursor-pointer focus-visible:outline-none"
         >
           <svg
             className="size-5"
