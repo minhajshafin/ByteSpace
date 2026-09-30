@@ -37,9 +37,6 @@ export default function SignIn() {
             alt="ByteSpace"
             className="h-[31px] w-auto transition-transform duration-200 group-hover:scale-105"
           />
-          <span className="font-brand font-bold text-[24px] text-gray-50">
-            ByteSpace
-          </span>
         </Link>
       </header>
 
